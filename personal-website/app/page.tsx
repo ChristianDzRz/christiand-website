@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { Card, CardContent } from '@/components/ui/card';
+import { SiGithub,  SiGmail } from "@icons-pack/react-simple-icons";
+import { FaLinkedin } from "react-icons/fa";
 import { Button } from '@/components/ui/button';
-import { Mail, GitBranchPlusIcon, LinkedinIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
@@ -116,17 +116,17 @@ export default function Home() {
           <div className='mt-6 flex gap-4 justify-center'>
             <Button asChild variant='secondary' size='icon' className='bg-white/20 hover:bg-white/30'>
               <a href='mailto:christiandzrz@gmail.com' aria-label='Email'>
-                <Mail />
+                <SiGmail />
               </a>
             </Button>
             <Button asChild variant='secondary' size='icon' className='bg-white/20 hover:bg-white/30'>
               <a href='https://github.com/ChristianDzRz' aria-label='GitHub'>
-                <GitBranchPlusIcon />
+                <SiGithub />
               </a>
             </Button>
             <Button asChild variant='secondary' size='icon' className='bg-white/20 hover:bg-white/30'>
               <a href='https://linkedin.com/in/christiandiazrz' aria-label='LinkedIn'>
-                <LinkedinIcon />
+                <FaLinkedin />
               </a>
             </Button>
           </div>
