@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+const nextConfig = {
+  output: 'standalone',
+  // If you're using images, you might also need:
+  images: {
+    unoptimized: true
+  }
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+module.exports = nextConfig
