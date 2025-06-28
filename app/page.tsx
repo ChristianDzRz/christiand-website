@@ -125,23 +125,27 @@ export default function Home() {
   return (
     
 <main className='font-sans antialiased min-h-screen bg-gradient-to-b from-white via-slate-50 to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900'>
-  {/* Hero section - keep its own background due to the image */}
-  <section className='relative flex flex-col items-center justify-center text-center py-24 overflow-hidden'>
-    {/* Background Image */}
+  {/* Hero */}
+  <section className='relative flex flex-col items-center justify-center text-center min-h-[600px] lg:min-h-[700px] overflow-hidden'>
+    {/* Background Image Container */}
     <div className='absolute inset-0 w-full h-full'>
       <Image
         src="/images/about_me_2.JPG"
         alt="Background"
         fill
-        className="object-cover"
         priority
+        className="object-cover object-center"
+        sizes="100vw"
+        style={{
+          objectPosition: '50% 30%' // Adjust this value to control the vertical position of the image
+        }}
       />
       {/* Dark overlay for better text readability */}
       <div className='absolute inset-0 bg-black/50'></div>
     </div>
     
     <motion.div 
-      className='relative z-10' 
+      className='relative z-10 px-4' 
       initial={{ opacity: 0, scale: 0.8 }} 
       animate={{ opacity: 1, scale: 1 }} 
       transition={{ duration: 0.8 }}
@@ -153,17 +157,17 @@ export default function Home() {
         Data Analyst · Emerging Data Engineer
       </p>
       <div className='mt-6 flex gap-4 justify-center'>
-        <Button asChild variant='secondary' size='icon' className='bg-white/20 hover:bg-white/30 backdrop-blur-sm'>
+        <Button asChild variant='secondary' size='icon' className='bg-white/60 hover:bg-white/95 backdrop-blur-sm'>
           <a href='mailto:christiandzrz@gmail.com' aria-label='Email'>
             <SiGmail />
           </a>
         </Button>
-        <Button asChild variant='secondary' size='icon' className='bg-white/20 hover:bg-white/30 backdrop-blur-sm'>
+        <Button asChild variant='secondary' size='icon' className='bg-white/60 hover:bg-white/95 backdrop-blur-sm'>
           <a href='https://github.com/ChristianDzRz' aria-label='GitHub'>
             <SiGithub />
           </a>
         </Button>
-        <Button asChild variant='secondary' size='icon' className='bg-white/20 hover:bg-white/30 backdrop-blur-sm'>
+        <Button asChild variant='secondary' size='icon' className='bg-white/60 hover:bg-white/95 backdrop-blur-sm'>
           <a href='https://linkedin.com/in/christiandiazrz' aria-label='LinkedIn'>
             <FaLinkedin />
           </a>
