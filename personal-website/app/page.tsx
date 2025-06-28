@@ -104,12 +104,6 @@ export default function Home() {
       <section className='relative flex flex-col items-center justify-center text-center py-24 overflow-hidden bg-gradient-to-br from-cyan-600 via-sky-500 to-indigo-600 text-white'>
         <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }}>
           <div className='relative w-40 h-40 mx-auto mb-6'>
-            <Image
-              src='/images/profile.jpg'
-              alt='Christian Diaz profile photo'
-              fill
-              className='rounded-full object-cover border-4 border-white shadow-lg'
-            />
           </div>
           <h1 className='text-5xl font-extrabold tracking-tight'>Christian Diaz Rodriguez</h1>
           <p className='mt-2 text-xl font-medium'>Data Analyst · Emerging Data Engineer</p>
