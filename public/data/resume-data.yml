@@ -1,22 +1,22 @@
 personalInfo:
   name: "Christian Diaz Rodriguez"
-  title: "Data Analyst · Emerging Data Engineer"
+  title: "Data Analyst | Data Scientist | Emerging Data Engineer"
   email: "christiandzrz@gmail.com"
   github: "https://github.com/ChristianDzRz"
   linkedin: "https://linkedin.com/in/christiandiazrz"
-  summary: "Curious data professional passionate about turning complex data into meaningful narratives. From bouldering to building data pipelines, I thrive on challenges and continuous learning."
+  summary: "Data enthusiast with a strong software-engineering mindset, skilled in Python, SQL, and visual analytics (Matplotlib, Tableau). At Goldman Sachs and Mercer I built automated reporting pipelines that improved data accuracy and accelerated decision-making. Known for learning new business domains quickly, connecting disparate data sources, and presenting clear, practical insights to both technical and non-technical teams."
 
 experiences:
   - company: "Goldman Sachs"
-    role: "Data Analyst – Risk Engineering"
+    role: "Analyst / Software Engineer – Risk Engineering"
     period: "Aug 2024 – Present"
     summary: "Automated monthly risk reports & implemented data‑quality checks."
     details:
-      - "Designed and implemented a straight‑through‑processing framework using Python, SQL & Pure, eliminating manual compilation."
-      - "Built reusable Python and Slang modules to standardise calculations and created Tableau dashboards for internal analytics."
-      - "Developed automated data‑quality checks and collaborated with upstream teams to resolve issues quickly."
-      - "Configured and monitored Procmon schedules to ensure reliable report delivery."
-      - "Presented insights to risk, trading and infrastructure stakeholders."
+      - "Designed and implemented a straight-through-processing framework to automate monthly risk reports using Python, SQL and Pure."
+      - "Built reusable Python and Slang modules and crafted Tableau dashboards for internal use."
+      - "Enhanced GitLab CI/CD pipelines — refactored YAML stages, added automated tests, and created Docker container images to standardise deployment."
+      - "Developed automated data-quality checks and resolved issues with upstream teams."
+      - "Configured and monitored Procmon schedules for reliable report delivery."
 
   - company: "Mercer"
     role: "Analyst"
@@ -68,7 +68,13 @@ skills:
   - Matplotlib
   - AWS
   - PySpark
-  - Pure / Procmon
+  - Pure
+  - Procmon
+  - Highcharts.js
+  - Kaniko
+  - Podman
+  - Hamilton
+  - Dagster
   - REST / JSON
   - Linux (RHEL)
   - Communication
